@@ -1,0 +1,14 @@
+# Explicit path budget: this file <= 1 KiB. Local tooling and generated paths below: 0 submitted bytes.
+# Source + lockfile + public runtime assets + dist + documentation: <= 8 MiB combined.
+**/node_modules/
+**/.vite/
+**/.cache/
+**/npm-cache/
+**/playwright-report/
+**/test-results/
+**/*.tsbuildinfo
+/test/scratch/
+**/.npm/
+**/.aws/
+**/.codex/
+**/.agents/

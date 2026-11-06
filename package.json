@@ -1,0 +1,34 @@
+{
+  "name": "squeek-genesis-lookup",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "typecheck": "tsc --noEmit",
+    "test": "playwright test",
+    "check:live": "node scripts/check-live.mjs",
+    "build:social": "node scripts/social-card.mjs",
+    "preview:subpath": "node scripts/serve-preview.mjs",
+    "check:delivery": "node scripts/check-delivery.mjs"
+  },
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "zod": "^4.1.12"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.11.0",
+    "@playwright/test": "^1.56.1",
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.2",
+    "@vitejs/plugin-react": "^5.1.0",
+    "typescript": "^5.9.3",
+    "vite": "^7.2.2"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  }
+}
