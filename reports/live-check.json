@@ -1,0 +1,136 @@
+{
+  "checkedAt": "2026-11-07T01:24:39.609Z",
+  "browser": "Chromium 154.0.8037.0",
+  "exportSubpath": "/preview/",
+  "mode": "Unmocked account API. Real public Genesis JSON imported through the UI when cross-site reads are blocked. Independently selected wallet and profile; no asserted association.",
+  "profileAccess": {
+    "directRead": "blocked",
+    "accessControlAllowOrigin": null,
+    "displaySource": "imported public API snapshot"
+  },
+  "account": {
+    "address": "0x798cf7770337a9283b6f2af69a8f079b3d7544dc",
+    "generatedAt": "2026-11-07T01:24:38.826Z",
+    "chain": "sepolia",
+    "tokenCountReturned": 6,
+    "nextCursor": null,
+    "claimableBaseUnits": "0"
+  },
+  "profile": {
+    "code": "639pun7q",
+    "snapshot": {
+      "members": 49620,
+      "computedAt": "2026-11-07T01:19:56.883Z"
+    },
+    "cloutBadges": [
+      {
+        "id": "clout.signed_up",
+        "title": "Signed Up"
+      },
+      {
+        "id": "clout.on_discord",
+        "title": "On Discord"
+      },
+      {
+        "id": "clout.the_invitooor",
+        "title": "The Invitooor"
+      },
+      {
+        "id": "clout.the_recruitooor",
+        "title": "The Recruitooor"
+      },
+      {
+        "id": "clout.the_ringleader",
+        "title": "The Ringleader"
+      },
+      {
+        "id": "clout.the_squeekfather",
+        "title": "The Squeekfather"
+      }
+    ]
+  },
+  "reflow": [
+    {
+      "width": 320,
+      "scrollWidth": 320
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390
+    },
+    {
+      "width": 600,
+      "scrollWidth": 600
+    },
+    {
+      "width": 784,
+      "scrollWidth": 784
+    },
+    {
+      "width": 1024,
+      "scrollWidth": 1024
+    },
+    {
+      "width": 1440,
+      "scrollWidth": 1440
+    }
+  ],
+  "rendered": {
+    "pairs": {
+      "body": {
+        "foreground": "rgb(41, 35, 50)",
+        "background": "rgb(246, 245, 249)",
+        "font": "\"Plus Jakarta Sans\", Arial, sans-serif",
+        "size": "16px",
+        "contrast": 14.01
+      },
+      "primary": {
+        "foreground": "rgb(255, 255, 255)",
+        "background": "rgb(112, 65, 187)",
+        "font": "\"Plus Jakarta Sans\", Arial, sans-serif",
+        "size": "14px",
+        "contrast": 6.64
+      },
+      "secondary": {
+        "foreground": "rgb(98, 90, 111)",
+        "background": "rgb(255, 255, 255)",
+        "font": "\"Plus Jakarta Sans\", Arial, sans-serif",
+        "size": "14px",
+        "contrast": 6.54
+      },
+      "accent": {
+        "foreground": "rgb(61, 32, 104)",
+        "background": "rgb(240, 234, 251)",
+        "font": "\"Plus Jakarta Sans\", Arial, sans-serif",
+        "size": "16px",
+        "contrast": 11.13
+      },
+      "hint": {
+        "foreground": "rgb(98, 90, 111)",
+        "background": "rgb(255, 255, 255)",
+        "font": "\"Plus Jakarta Sans\", Arial, sans-serif",
+        "size": "14px",
+        "contrast": 6.54
+      }
+    },
+    "loadedFonts": [
+      {
+        "family": "Plus Jakarta Sans",
+        "status": "loaded"
+      }
+    ]
+  },
+  "scriptErrors": [],
+  "browserConsoleErrors": [
+    "Access to fetch at 'https://community.squeekchain.com/v1/community/profiles/639pun7q' from origin '[static preview origin]' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.",
+    "Failed to load resource: net::ERR_FAILED"
+  ],
+  "failedRequests": [
+    {
+      "url": "https://community.squeekchain.com/v1/community/profiles/639pun7q",
+      "error": "net::ERR_FAILED"
+    }
+  ],
+  "httpErrors": [],
+  "expectedExternalFailure": "The profile endpoint has no cross-site permission. Its console and request errors are expected and the UI import recovers from them."
+}

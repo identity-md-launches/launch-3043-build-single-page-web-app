@@ -18,7 +18,7 @@ async function walk(directory = '.') {
   }
 }
 await walk()
-for (const path of ['dist/index.html', 'package.json', 'package-lock.json', 'README.md', 'DESIGN.md', 'artifacts/validation.md']) assert(files.some(file => file.path === path), `Missing deliverable: ${path}`)
+for (const path of ['dist/index.html', 'package.json', 'package-lock.json', 'README.md', 'DESIGN.md', 'HOSTING.md', 'VALIDATION.md', 'reports/hosting-check.json']) assert(files.some(file => file.path === path), `Missing deliverable: ${path}`)
 assert(!files.some(file => file.path === '.gitmodules'), 'A submodule manifest must not be delivered')
 const ignore = await readFile('.gitignore', 'utf8')
 assert(Buffer.byteLength(ignore) <= 1024 && ignore.includes('Explicit path budget'), 'Ignore file must retain its explicit 1 KiB budget')

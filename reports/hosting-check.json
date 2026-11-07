@@ -1,0 +1,75 @@
+{
+  "checkedAt": "2026-11-07T01:29:20.286Z",
+  "passed": true,
+  "scope": "Local static-host rehearsal at the root and a nested subpath. External API requests blocked; the interaction suite and live check cover data access separately.",
+  "publication": "Ready for the network to pin dist/ after review; no public URL has been assigned or verified by this check.",
+  "browser": "Chromium 154.0.8037.0",
+  "exportBytes": 461828,
+  "files": [
+    {
+      "path": "assets/index-BLVNLLRy.css",
+      "bytes": 23780,
+      "sha256": "8b187f951cd8860f4e14617922f2b5786a4cd2bd5688ce536f73578f40a0d08e"
+    },
+    {
+      "path": "assets/index-bN5WFltz.js",
+      "bytes": 345489,
+      "sha256": "74d732970d5ad367d937dcb1a132c73c7e4e4980c4708742da8385db34c1bc0e"
+    },
+    {
+      "path": "favicon.svg",
+      "bytes": 480,
+      "sha256": "58cac6141217bf7c05303d4e8004f20117664de6cb355b5c8039a50150aac44f"
+    },
+    {
+      "path": "fonts/OFL.txt",
+      "bytes": 4534,
+      "sha256": "e07fd1167c2aaaa6fb965dd66e1e73b13c9c95b76b2d648b6e938780f30b37af"
+    },
+    {
+      "path": "fonts/plus-jakarta-sans-latin.woff2",
+      "bytes": 27348,
+      "sha256": "153fc85b70298beeb1d61a5f723331649e7f23bb77302a66e61cb3e2fbdb5e79"
+    },
+    {
+      "path": "index.html",
+      "bytes": 1319,
+      "sha256": "839f6499320a2c950103f4784fe0b673fd49ef441d37ddc0c37ffa9bbbea7e6a"
+    },
+    {
+      "path": "social.png",
+      "bytes": 58878,
+      "sha256": "431dd6e285b57c50d899aa10df13f36592ef4fb2f55502f9fcccd038ad39e398"
+    }
+  ],
+  "mounts": [
+    {
+      "mount": "/",
+      "filesServed": 7,
+      "localResourcesLoaded": [
+        "/",
+        "/assets/index-BLVNLLRy.css",
+        "/assets/index-bN5WFltz.js",
+        "/fonts/plus-jakarta-sans-latin.woff2"
+      ],
+      "firstScreenAction": true,
+      "fontLoaded": true,
+      "scriptErrors": [],
+      "localResourceFailures": []
+    },
+    {
+      "mount": "/preview/nested/site/",
+      "filesServed": 7,
+      "localResourcesLoaded": [
+        "/preview/nested/site/",
+        "/preview/nested/site/assets/index-BLVNLLRy.css",
+        "/preview/nested/site/assets/index-bN5WFltz.js",
+        "/preview/nested/site/fonts/plus-jakarta-sans-latin.woff2"
+      ],
+      "firstScreenAction": true,
+      "fontLoaded": true,
+      "scriptErrors": [],
+      "localResourceFailures": []
+    }
+  ]
+}

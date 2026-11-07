@@ -1,0 +1,131 @@
+{
+  "passed": true,
+  "scope": "Application source, public assets, production export, existing build inputs and tests match repository HEAD byte for byte.",
+  "files": [
+    {
+      "path": "dist/assets/index-BLVNLLRy.css",
+      "bytes": 23780,
+      "sha256": "8b187f951cd8860f4e14617922f2b5786a4cd2bd5688ce536f73578f40a0d08e"
+    },
+    {
+      "path": "dist/assets/index-bN5WFltz.js",
+      "bytes": 345489,
+      "sha256": "74d732970d5ad367d937dcb1a132c73c7e4e4980c4708742da8385db34c1bc0e"
+    },
+    {
+      "path": "dist/favicon.svg",
+      "bytes": 480,
+      "sha256": "58cac6141217bf7c05303d4e8004f20117664de6cb355b5c8039a50150aac44f"
+    },
+    {
+      "path": "dist/fonts/OFL.txt",
+      "bytes": 4534,
+      "sha256": "e07fd1167c2aaaa6fb965dd66e1e73b13c9c95b76b2d648b6e938780f30b37af"
+    },
+    {
+      "path": "dist/fonts/plus-jakarta-sans-latin.woff2",
+      "bytes": 27348,
+      "sha256": "153fc85b70298beeb1d61a5f723331649e7f23bb77302a66e61cb3e2fbdb5e79"
+    },
+    {
+      "path": "dist/index.html",
+      "bytes": 1319,
+      "sha256": "839f6499320a2c950103f4784fe0b673fd49ef441d37ddc0c37ffa9bbbea7e6a"
+    },
+    {
+      "path": "dist/social.png",
+      "bytes": 58878,
+      "sha256": "431dd6e285b57c50d899aa10df13f36592ef4fb2f55502f9fcccd038ad39e398"
+    },
+    {
+      "path": "index.html",
+      "bytes": 1220,
+      "sha256": "265a5e93213e5cacdbf20dcc5063aba8815e54c9698e94cb488111801809065a"
+    },
+    {
+      "path": "package-lock.json",
+      "bytes": 64560,
+      "sha256": "d012e60acf03c094370347283e19eb615e99e85ceb335ec05f87aabef90108f0"
+    },
+    {
+      "path": "package.json",
+      "bytes": 901,
+      "sha256": "4377bcb5b9fbc989aa12d0ce4ac28446b3ea4cd69d1a048fb3e45fe47c796aad"
+    },
+    {
+      "path": "playwright.config.ts",
+      "bytes": 803,
+      "sha256": "ecb1fca99705936fa50126fc71c071a31ebf0c85272e35a0b9ac09bcb4b54524"
+    },
+    {
+      "path": "public/favicon.svg",
+      "bytes": 480,
+      "sha256": "58cac6141217bf7c05303d4e8004f20117664de6cb355b5c8039a50150aac44f"
+    },
+    {
+      "path": "public/fonts/OFL.txt",
+      "bytes": 4534,
+      "sha256": "e07fd1167c2aaaa6fb965dd66e1e73b13c9c95b76b2d648b6e938780f30b37af"
+    },
+    {
+      "path": "public/fonts/plus-jakarta-sans-latin.woff2",
+      "bytes": 27348,
+      "sha256": "153fc85b70298beeb1d61a5f723331649e7f23bb77302a66e61cb3e2fbdb5e79"
+    },
+    {
+      "path": "public/social.png",
+      "bytes": 58878,
+      "sha256": "431dd6e285b57c50d899aa10df13f36592ef4fb2f55502f9fcccd038ad39e398"
+    },
+    {
+      "path": "src/App.tsx",
+      "bytes": 27696,
+      "sha256": "b22222857ad7b31e2a688d8463fa65b1bde67b0bc0294664ca2291c1d894ce5c"
+    },
+    {
+      "path": "src/api.ts",
+      "bytes": 10979,
+      "sha256": "e852f6ec398e41c0c6905489491b21a1bad4e3451e5b53dcd0d5f16b240f0cf5"
+    },
+    {
+      "path": "src/components/Icon.tsx",
+      "bytes": 1821,
+      "sha256": "d770444cf812258848ead6f6fbbe14742a124fe46ca405dae731adad1c94050e"
+    },
+    {
+      "path": "src/components/Squeek.tsx",
+      "bytes": 1926,
+      "sha256": "d8c86d74ca1a491e93f3766b9b619c33a1afd21e7287dbe934671162b40a48fe"
+    },
+    {
+      "path": "src/main.tsx",
+      "bytes": 233,
+      "sha256": "26210b6a01ea35ab17cc467c59d16c11176e15725301c0bcc5a767b6ce03c2e4"
+    },
+    {
+      "path": "src/styles.css",
+      "bytes": 26858,
+      "sha256": "e0a8f37ee15cc73027cf2d12081afd6e4f9533c0345e66311e8088cc8ac7cfb1"
+    },
+    {
+      "path": "tests/fixtures.ts",
+      "bytes": 5539,
+      "sha256": "66e23420b155e1b8de07ae45de82fa8056d9f3bc2a700e7c27343964d68e0956"
+    },
+    {
+      "path": "tests/interactions.spec.ts",
+      "bytes": 19846,
+      "sha256": "ca92909a82e3aeec12e18a6ec7b00897e08227957ac4f16d8e160b284e2be3a3"
+    },
+    {
+      "path": "tsconfig.json",
+      "bytes": 624,
+      "sha256": "4cd25b9475cce9abf34bcf25494f09e8d6d1df857bda0e70a19e728e06fff89d"
+    },
+    {
+      "path": "vite.config.ts",
+      "bytes": 196,
+      "sha256": "0d8bd41cf379e6b0a1fd3c8cf1c4c9fb6c60ba08230c2d791afd39118096f391"
+    }
+  ]
+}

@@ -21,18 +21,18 @@ try {
   page.on('console', message => { if (message.type() === 'error') browserConsoleErrors.push(message.text().replaceAll(new URL(base).origin, '[static preview origin]')) })
   page.on('requestfailed', request => failures.push({ url: request.url(), error: request.failure()?.errorText }))
   page.on('response', response => { if (response.status() >= 400) httpErrors.push({ url: response.url(), status: response.status() }) })
-  await mkdir('artifacts/screenshots', { recursive: true })
+  await mkdir('reports/screenshots', { recursive: true })
   await page.goto(base)
   await page.evaluate(() => document.fonts.ready)
   const bounds = await page.getByRole('button', { name: 'Look up wallet', exact: true }).boundingBox()
   assert(bounds && bounds.y + bounds.height < 844)
-  await page.screenshot({ path: 'artifacts/screenshots/mobile-initial.png' })
+  await page.screenshot({ path: 'reports/screenshots/mobile-initial.png' })
   await page.keyboard.press('Tab')
   assert.equal(await page.getByRole('link', { name: 'Skip to content' }).evaluate(element => element === document.activeElement), true)
   await page.keyboard.press('Enter')
   await page.keyboard.press('Tab')
   assert.equal(await page.getByLabel('Wallet address', { exact: true }).evaluate(element => element === document.activeElement), true)
-  await page.screenshot({ path: 'artifacts/screenshots/mobile-keyboard-focus.png' })
+  await page.screenshot({ path: 'reports/screenshots/mobile-keyboard-focus.png' })
   const [accountResponse] = await Promise.all([
     page.waitForResponse(response => response.url().includes('api.squeekchain.com/v1/accounts/') && response.status() === 200, { timeout: 25000 }),
     page.getByRole('button', { name: 'Try a public wallet', exact: true }).click(),
@@ -56,7 +56,7 @@ try {
   const profile = await profileResponse.json()
   const allowOrigin = profileResponse.headers()['access-control-allow-origin'] ?? null
   if (profileOutcome === 'blocked') {
-    await page.screenshot({ path: 'artifacts/screenshots/profile-import-recovery.png', fullPage: true })
+    await page.screenshot({ path: 'reports/screenshots/profile-import-recovery.png', fullPage: true })
     await page.getByLabel('Public profile JSON', { exact: true }).fill(JSON.stringify(profile))
     await page.getByRole('button', { name: 'Read snapshot', exact: true }).click()
   }
@@ -72,10 +72,10 @@ try {
     reflow.push(metric)
   }
   await page.evaluate(() => window.scrollTo(0, 0))
-  await page.screenshot({ path: 'artifacts/screenshots/desktop-live.png', fullPage: true })
+  await page.screenshot({ path: 'reports/screenshots/desktop-live.png', fullPage: true })
   await page.setViewportSize({ width: 390, height: 844 })
   await page.evaluate(() => window.scrollTo(0, 0))
-  await page.screenshot({ path: 'artifacts/screenshots/mobile-live.png', fullPage: true })
+  await page.screenshot({ path: 'reports/screenshots/mobile-live.png', fullPage: true })
   await page.mouse.move(0, 0)
   await page.locator('.primary-button').evaluate(element => element.getAnimations().forEach(animation => animation.finish()))
   const rendered = await page.evaluate(() => {
@@ -114,7 +114,7 @@ try {
     reflow, rendered, scriptErrors, browserConsoleErrors, failedRequests: failures, httpErrors,
     expectedExternalFailure: profileOutcome === 'blocked' ? 'The profile endpoint has no cross-site permission. Its console and request errors are expected and the UI import recovers from them.' : null,
   }
-  await writeFile('artifacts/live-check.json', JSON.stringify(result, null, 2) + '\n')
+  await writeFile('reports/live-check.json', JSON.stringify(result, null, 2) + '\n')
   console.log(JSON.stringify({ passed: true, profileOutcome, tokensReturned: account.tokens.length, cloutBadges: clout.length, viewports: reflow.map(r => r.width), scriptErrors, browserConsoleErrors, failedRequests: failures, httpErrors }, null, 2))
 } catch (error) {
   console.error(error.message)

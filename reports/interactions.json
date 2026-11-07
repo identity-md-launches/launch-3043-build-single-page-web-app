@@ -1,0 +1,173 @@
+{
+  "scope": "Existing 20 interaction tests with API fixtures. Provided Playwright runtime; application and assertions unchanged.",
+  "stats": {
+    "startTime": "2026-11-07T01:22:42.006Z",
+    "duration": 8806.003,
+    "expected": 20,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "tests": [
+    {
+      "title": "mobile first screen exposes the lookup, metadata and all relative runtime assets",
+      "source": "tests/interactions.spec.ts",
+      "line": 26,
+      "passed": true,
+      "status": "expected",
+      "durationMs": 510
+    },
+    {
+      "title": "keyboard validation focuses the address and Enter loads real-shaped wallet data",
+      "source": "tests/interactions.spec.ts",
+      "line": 48,
+      "passed": true,
+      "status": "expected",
+      "durationMs": 968
+    },
+    {
+      "title": "precise SQK amounts are truncated explicitly and full precision remains accessible",
+      "source": "tests/interactions.spec.ts",
+      "line": 72,
+      "passed": true,
+      "status": "expected",
+      "durationMs": 674
+    },
+    {
+      "title": "unknown rewards and staking are never shown as zero or complete holdings",
+      "source": "tests/interactions.spec.ts",
+      "line": 86,
+      "passed": true,
+      "status": "expected",
+      "durationMs": 523
+    },
+    {
+      "title": "unavailable and malformed responses report failures instead of empty holdings",
+      "source": "tests/interactions.spec.ts",
+      "line": 95,
+      "passed": true,
+      "status": "expected",
+      "durationMs": 472
+    },
+    {
+      "title": "an empty wallet has a real zero count and a usable next step",
+      "source": "tests/interactions.spec.ts",
+      "line": 107,
+      "passed": true,
+      "status": "expected",
+      "durationMs": 567
+    },
+    {
+      "title": "rate limiting honors Retry-After and recovers through the primary action",
+      "source": "tests/interactions.spec.ts",
+      "line": 116,
+      "passed": true,
+      "status": "expected",
+      "durationMs": 1884
+    },
+    {
+      "title": "network failure and timeout give a recoverable error, with static site intact",
+      "source": "tests/interactions.spec.ts",
+      "line": 133,
+      "passed": true,
+      "status": "expected",
+      "durationMs": 374
+    },
+    {
+      "title": "asset failures and mismatched releases do not fabricate a formatted SQK balance",
+      "source": "tests/interactions.spec.ts",
+      "line": 148,
+      "passed": true,
+      "status": "expected",
+      "durationMs": 369
+    },
+    {
+      "title": "Genesis code and link lookups show clout only, independently of the wallet",
+      "source": "tests/interactions.spec.ts",
+      "line": 157,
+      "passed": true,
+      "status": "expected",
+      "durationMs": 558
+    },
+    {
+      "title": "invalid profile hosts, missing profiles, and profiles without clout have clear states",
+      "source": "tests/interactions.spec.ts",
+      "line": 175,
+      "passed": true,
+      "status": "expected",
+      "durationMs": 642
+    },
+    {
+      "title": "collection pagination keeps the same safe snapshot and filters across loaded pages",
+      "source": "tests/interactions.spec.ts",
+      "line": 189,
+      "passed": true,
+      "status": "expected",
+      "durationMs": 630
+    },
+    {
+      "title": "pagination rejects changed snapshots and keeps the previously loaded collection",
+      "source": "tests/interactions.spec.ts",
+      "line": 202,
+      "passed": true,
+      "status": "expected",
+      "durationMs": 592
+    },
+    {
+      "title": "layout reflows without clipping at representative widths, enlarged text and RTL",
+      "source": "tests/interactions.spec.ts",
+      "line": 213,
+      "passed": true,
+      "status": "expected",
+      "durationMs": 838
+    },
+    {
+      "title": "accessibility scan covers initial, populated and expanded badge states",
+      "source": "tests/interactions.spec.ts",
+      "line": 231,
+      "passed": true,
+      "status": "expected",
+      "durationMs": 2300
+    },
+    {
+      "title": "reduced motion suppresses the loading spinner and maintains a text cue",
+      "source": "tests/interactions.spec.ts",
+      "line": 242,
+      "passed": true,
+      "status": "expected",
+      "durationMs": 374
+    },
+    {
+      "title": "amount and input edge cases preserve precision and reject invalid data",
+      "source": "tests/interactions.spec.ts",
+      "line": 252,
+      "passed": true,
+      "status": "expected",
+      "durationMs": 4
+    },
+    {
+      "title": "cross-site profile failure offers a local import with an honest snapshot label",
+      "source": "tests/interactions.spec.ts",
+      "line": 263,
+      "passed": true,
+      "status": "expected",
+      "durationMs": 544
+    },
+    {
+      "title": "snapshot import validates JSON, focuses errors, and rejects another profile code",
+      "source": "tests/interactions.spec.ts",
+      "line": 278,
+      "passed": true,
+      "status": "expected",
+      "durationMs": 1497
+    },
+    {
+      "title": "snapshot schema rejects unavailable, oversized and incomplete payloads",
+      "source": "tests/interactions.spec.ts",
+      "line": 297,
+      "passed": true,
+      "status": "expected",
+      "durationMs": 15
+    }
+  ]
+}

@@ -4,6 +4,8 @@
 
 Squeekfolio is a compact wallet and Genesis-profile viewer for Squeekchain members. Its main action is an address lookup, placed immediately under the page title. Quiet violet surfaces and a local dot-grid hamster illustration carry the visual identity; the interface uses plain labels and selectable data. This is inferred product styling, not official Squeekchain branding.
 
+The November 7 static-hosting handoff preserves the delivered application source, layout, interface copy and runtime assets. The export was rebuilt and inspected at root and nested static-host paths; this document records the existing implementation confirmed in that review.
+
 `src/styles.css` is the canonical token and layout source. `src/App.tsx` defines the page’s summary, collection, clout and source-disclosure patterns. `src/components/Squeek.tsx` supplies the decorative illustration and brand mark; `src/components/Icon.tsx` supplies the local line icons.
 
 ## Colors
@@ -32,7 +34,7 @@ The system uses hexadecimal sRGB primitives, then semantic role tokens. Componen
 
 The SVG artwork has its own decorative purple, ivory and dot-grid fills. They are illustration colors rather than status indicators or additional interactive accents.
 
-Rendered contrast was measured in Chromium: primary page text on the page background **14.01:1**, secondary text on white **6.54:1**, and dark accent text on its tinted surface **11.13:1**. The current primary-button measurement is preserved in `artifacts/live-check.json`; the default and hover fills are also covered by the rendered probe/interaction scans. These are measured pairs, not a claim about every possible imported string, native control or browser.
+Rendered contrast was measured in Chromium: primary page text on the page background **14.01:1**, secondary text on white **6.54:1**, dark accent text on its tinted surface **11.13:1**, and the white primary-button label on its default purple fill **6.64:1**. The measured pairs are preserved in `reports/live-check.json`. These are measured default-state pairs, not a claim about every hover state, imported string, native control or browser.
 
 ## Typography
 
@@ -94,4 +96,4 @@ Use the existing shared container, semantic tokens, six-size scale and native fo
 
 Keep account-derived data and a supplied Genesis profile visibly separate. Keep unknown, empty, zero, loading and imported states distinct. Do not add a wallet connector or transaction flow to this address viewer, label imported badges as live, truncate a critical address, add a second font, or insert sample balances into the production bundle.
 
-The six-domain findings, actual commands, screenshots and unperformed checks belong to `artifacts/validation.md`; they are not silently upgraded to verified design guarantees here.
+The six-domain findings, actual commands, screenshots and unperformed checks are in [VALIDATION.md](VALIDATION.md), with durable evidence under `reports/`; they are not silently upgraded to verified design guarantees here. The pinned probe passed all 16 checks at 320, 390 and 1440px, and the current 390px first screen exposes the wallet input and lookup action. Publication and a public URL remain the network's step after review; [HOSTING.md](HOSTING.md) records the handoff.
